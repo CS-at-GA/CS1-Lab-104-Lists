@@ -20,7 +20,7 @@ function draw() {
   background(255);
   
   for( let i = 0; i < movers.length-1; i++ ) {
-    for( let j = i; j < movers.length; j++ ) {
+    for( let j = i + 1; j < movers.length; j++ ) {
       if( touching(movers[i],movers[j]) ) {
         const ratio = (movers[i].r > movers[j].r ? movers[i].r : movers[j].r) / (movers[i].r + movers[j].r) ;
         const newColor = lerpColor( movers[i].c, movers[j].c, ratio);

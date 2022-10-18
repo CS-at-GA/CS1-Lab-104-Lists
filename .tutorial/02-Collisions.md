@@ -1,5 +1,7 @@
 # Collisions
 
+**Copy the contents of `script3.js` into `script.js`.**
+
 The circles are moving, which is great, but let's take it one step further... can we determine when two circles are overlapping (colliding)? 
 
 ## First, math...
