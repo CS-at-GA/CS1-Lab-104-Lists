@@ -10,7 +10,7 @@ function setup() {
       tx:random(10000),
       ty:random(10000),
       c: color(random(colorList)),
-      r: random(4,25)
+      r: 10
     });
   }
 }

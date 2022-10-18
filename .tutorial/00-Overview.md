@@ -1,6 +1,10 @@
 # Example Code Overview
 
+In this lab, you'll learn about: a few cool p5 functions, POJOs, and, most importantly, arrays (lists). 
+
 ## Summary of Previous Lab
+
+In the last lab, you learned about loops, as well as some javscript trickery. It is crucial that you understand loops before starting this lab, so make sure you review and/or ask questions as needed. 
 
 ## Overview of Current Lab
 
@@ -58,10 +62,14 @@ In all ways, an indexed item in an array is a variable, meaning we get a value f
 
 To achieve the fluid moviement here, we use a technique called Perlin Noise. There are two parts to this: 
 
-1. using the `noise` function, with a number (`moversT[i]`, in our example) to generate a number between 0 and 1. This number is random-ish. The key here is _the closer together the values that are passed into noise on subsequent calls, the closer the output values_. If we passed in 7 and then 8 the values would _probably_ be further apart than if we passed 7 and then 7.1.
-2. we then take the output of the `noise` function and use it with the `map` function. This function takes a value that lives in one range (between 0 and 1, in this case) and maps it into another value (0 to height).
+1. using the p5 [`noise`](https://p5js.org/reference/#/p5/noise) function, with a number (`moversT[i]`, in our example) to generate a number between 0 and 1. This number is random-ish. The key here is _the closer together the values that are passed into noise on subsequent calls, the closer the output values_. If we passed in 7 and then 8 the values would _probably_ be further apart than if we passed 7 and then 7.1.
+2. we then take the output of the `noise` function and use it with the p5 [`map`](https://p5js.org/reference/#/p5/map) function. This function takes a value that lives in one range (between 0 and 1, in this case) and maps it into another value (0 to height).
 
 In this way, we achieve the fluid vertical movement of the circles. 
+
+## Goal
+
+Add a new array representing a new property. 
 
 [^1]: Certainly, you could copy and paste, but you'll _remember_ it better if you type it. 
 [^2]: And lots of similar things that we want to do similar things to. 
